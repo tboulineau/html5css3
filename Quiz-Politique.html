@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questionnaire politique</title>
+</head>
+<body>
+    <header>
+        <h1>Quizz Politique</h1>
+    </header>
+    <main>
+
+        <form id="quiz-form">
+            <label for="question1">Qui fut le premier président de la République dans l'Histoire de France ?</label><br>
+            <fieldset>
+                <p><input type="radio" name="question1" value="Louis_Napoleon_Bonaparte">Louis Napoléon Bonaparte</p>
+                <p><input type="radio" name="question1" value="Maiximilien_de_Robespierre">Maximilien de Robespierre</p>
+                <p><input type="radio" name="question1" value="Charles_de_Gaulle">Charles de Gaulle</p>
+                
+                <p><input type="radio" name="question1"  value="Adolphe_Thiers">Adolphe Thiers</p>
+            </fieldset>
+            <button type="button" onclick="checkAnswers()">Vérifier les réponses</button>
+        </form>
+        <div id="result"></div>
+    </main>
+    
+    <script>
+        function checkAnswers() {
+            
+            var q=document.getElementsByName("question1").value;
+            
+            console.log("q= "+q);
+           /* if (q=="Louis_Napoleon_Bonaparte"){
+                result.innerHTML=1;
+            }
+            else{
+                result.innerHTML=0;
+            }*/
+        }
+    </script>
+</body>
+</html>

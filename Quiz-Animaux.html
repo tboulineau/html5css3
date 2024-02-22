@@ -1,66 +1,22 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz sur les Animaux</title>
+    <title>Animal Quiz</title>
 </head>
 <body>
     <header>
-        <h1>Quiz sur les Animaux</h1>
+        <h1>Animal Quiz</h1>
     </header>
-    <main>
-        <form id="quiz-form">
-            <div>
-                <p>1. Quel est le plus grand animal terrestre ?</p>
-                <input type="radio" id="q1-elephant" name="question1" value="elephant">
-                <label for="q1-elephant">Éléphant</label><br>
-                <input type="radio" id="q1-girafe" name="question1" value="girafe">
-                <label for="q1-girafe">Girafe</label><br>
-                <input type="radio" id="q1-rhinoceros" name="question1" value="rhinoceros">
-                <label for="q1-rhinoceros">Rhinocéros</label><br>
-                <input type="radio" id="q1-hippopotame" name="question1" value="hippopotame">
-                <label for="q1-hippopotame">Hippopotame</label><br>
-            </div><br>
-
-            <div>
-                <p>2. Quel animal est connu pour ses rayures noires et blanches ?</p>
-                <input type="radio" id="q2-zebre" name="question2" value="zebre">
-                <label for="q2-zebre">Zèbre</label><br>
-                <input type="radio" id="q2-tigre" name="question2" value="tigre">
-                <label for="q2-tigre">Tigre</label><br>
-                <input type="radio" id="q2-lion" name="question2" value="lion">
-                <label for="q2-lion">Lion</label><br>
-                <input type="radio" id="q2-girafe" name="question2" value="girafe">
-                <label for="q2-girafe">Girafe</label><br>
-            </div><br>
-
-            <div>
-                <p>3. Quel animal vole et se tourne la tête presque complètement en arrière ?</p>
-                <input type="radio" id="q3-hibou" name="question3" value="hibou">
-                <label for="q3-hibou">Hibou</label><br>
-                <input type="radio" id="q3-aigle" name="question3" value="aigle">
-                <label for="q3-aigle">Aigle</label><br>
-                <input type="radio" id="q3-corbeau" name="question3" value="corbeau">
-                <label for="q3-corbeau">Corbeau</label><br>
-                <input type="radio" id="q3-faucon" name="question3" value="faucon">
-                <label for="q3-faucon">Faucon</label><br>
-            </div><br>
-
-            <button type="button" onclick="checkAnswers()">Vérifier les réponses</button>
-        </form>
-
-        <div id="result"></div>
-    </main>
-
     <script>
         function checkAnswers() {
-            var q1 = document.querySelector('input[name="question1"]:checked');
-            var q2 = document.querySelector('input[name="question2"]:checked');
-            var q3 = document.querySelector('input[name="question3"]:checked');
+            var q1 = document.getElementById('question1').value;
+            var q2 = document.getElementById('question2').value;
+            var q3 = document.getElementById('question3').value;
 
             var correctAnswers = ["elephant", "zebre", "hibou"];
-            var userAnswers = [q1 ? q1.value : null, q2 ? q2.value : null, q3 ? q3.value : null];
+            var userAnswers = [q1, q2, q3];
 
             var score = 0;
             var result = document.getElementById('result');
@@ -74,5 +30,38 @@
             result.innerHTML = "Score: " + score + "/3";
         }
     </script>
+    <main>
+        <form id="quiz-form">
+            <label for="question1">Quel est le plus grand animal terrestre ?</label><br>
+            <select id="question1" name="question1">
+                <option value="elephant">Éléphant</option>
+                <option value="girafe">Girafe</option>
+                <option value="rhinoceros">Rhinoocéros</option>
+                <option value="hippopotame">Hippopotame</option>
+            </select><br><br>
+
+            <label for="question2">Quel animal est connu pour ses rayures noires et blanches ?</label><br>
+            <select id="question2" name="question2">
+                <option value="zebre">Zèbre</option>
+                <option value="tigre">Tigre</option>
+                <option value="lion">Lion</option>
+                <option value="girafe">Girafe</option>
+            </select><br><br>
+
+            <label for="question3">Quel animal vole et se tourne la tête presque complètement en arrière ?</label><br>
+            <select id="question3" name="question3">
+                <option value="hibou">Hibou</option>
+                <option value="aigle">Aigle</option>
+                <option value="corbeau">Corbeau</option>
+                <option value="faucon">Faucon</option>
+            </select><br><br>
+
+            <button type="button" onclick="checkAnswers()">Vérifier les réponses</button>
+        </form>
+
+        <div id="result"></div>
+    </main>
+
+ 
 </body>
 </html>
