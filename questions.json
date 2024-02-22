@@ -1,0 +1,17 @@
+[
+    {
+        "question": "Quel est le plus grand animal terrestre ?",
+        "options": ["Éléphant", "Girafe", "Rhinocéros", "Hippopotame"],
+        "answer": "Éléphant"
+    },
+    {
+        "question": "Quel animal est connu pour ses rayures noires et blanches ?",
+        "options": ["Zèbre", "Tigre", "Lion", "Girafe"],
+        "answer": "Zèbre"
+    },
+    {
+        "question": "Quel animal vole et se tourne la tête presque complètement en arrière ?",
+        "options": ["Hibou", "Aigle", "Corbeau", "Faucon"],
+        "answer": "Hibou"
+    }
+]
