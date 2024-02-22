@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Quiz</title>
+</head>
+<body>
+    <header>
+        <h1>Animal Quiz</h1>
+    </header>
+    <main>
+        <form id="quiz-form">
+            <label for="question1">Quel est le plus grand animal terrestre ?</label><br>
+            <select id="question1" name="question1">
+                <option value="elephant">Éléphant</option>
+                <option value="girafe">Girafe</option>
+                <option value="rhinoceros">Rhinoocéros</option>
+                <option value="hippopotame">Hippopotame</option>
+            </select><br><br>
+
+            <label for="question2">Quel animal est connu pour ses rayures noires et blanches ?</label><br>
+            <select id="question2" name="question2">
+                <option value="zebre">Zèbre</option>
+                <option value="tigre">Tigre</option>
+                <option value="lion">Lion</option>
+                <option value="girafe">Girafe</option>
+            </select><br><br>
+
+            <label for="question3">Quel animal vole et se tourne la tête presque complètement en arrière ?</label><br>
+            <select id="question3" name="question3">
+                <option value="hibou">Hibou</option>
+                <option value="aigle">Aigle</option>
+                <option value="corbeau">Corbeau</option>
+                <option value="faucon">Faucon</option>
+            </select><br><br>
+
+            <button type="button" onclick="checkAnswers()">Vérifier les réponses</button>
+        </form>
+
+        <div id="result"></div>
+    </main>
+
+    <script>
+        function checkAnswers() {
+            var q1 = document.getElementById('question1').value;
+            var q2 = document.getElementById('question2').value;
+            var q3 = document.getElementById('question3').value;
+
+            var correctAnswers = ["elephant", "zebre", "hibou"];
+            var userAnswers = [q1, q2, q3];
+
+            var score = 0;
+            var result = document.getElementById('result');
+
+            for (var i = 0; i < correctAnswers.length; i++) {
+                if (userAnswers[i] === correctAnswers[i]) {
+                    score++;
+                }
+            }
+
+            result.innerHTML = "Score: " + score + "/3";
+        }
+    </script>
+</body>
+</html>
