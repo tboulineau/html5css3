@@ -9,6 +9,27 @@
     <header>
         <h1>Animal Quiz</h1>
     </header>
+    <script>
+        function checkAnswers() {
+            var q1 = document.getElementById('question1').value;
+            var q2 = document.getElementById('question2').value;
+            var q3 = document.getElementById('question3').value;
+
+            var correctAnswers = ["elephant", "zebre", "hibou"];
+            var userAnswers = [q1, q2, q3];
+
+            var score = 0;
+            var result = document.getElementById('result');
+
+            for (var i = 0; i < correctAnswers.length; i++) {
+                if (userAnswers[i] === correctAnswers[i]) {
+                    score++;
+                }
+            }
+
+            result.innerHTML = "Score: " + score + "/3";
+        }
+    </script>
     <main>
         <form id="quiz-form">
             <label for="question1">Quel est le plus grand animal terrestre ?</label><br>
@@ -41,26 +62,6 @@
         <div id="result"></div>
     </main>
 
-    <script>
-        function checkAnswers() {
-            var q1 = document.getElementById('question1').value;
-            var q2 = document.getElementById('question2').value;
-            var q3 = document.getElementById('question3').value;
-
-            var correctAnswers = ["elephant", "zebre", "hibou"];
-            var userAnswers = [q1, q2, q3];
-
-            var score = 0;
-            var result = document.getElementById('result');
-
-            for (var i = 0; i < correctAnswers.length; i++) {
-                if (userAnswers[i] === correctAnswers[i]) {
-                    score++;
-                }
-            }
-
-            result.innerHTML = "Score: " + score + "/3";
-        }
-    </script>
+ 
 </body>
 </html>

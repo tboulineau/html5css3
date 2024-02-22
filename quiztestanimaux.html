@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Quiz</title>
+</head>
+<body>
+    <header>
+        <h1>Animal Quiz</h1>
+    </header>
+    <main id="quiz-container">
+        <!-- Questions will be dynamically added here -->
+    </main>
+
+    <script>
+        // Load the JSON file containing questions
+        fetch('questions.json')
+            .then(response => response.json())
+            .then(data => {
+                const quizContainer = document.getElementById('quiz-container');
+
+                // Iterate through each question in the JSON data
+                data.questions.forEach(questionObj => {
+                    const questionDiv = document.createElement('div');
+
+                    // Create a question paragraph
+                    const questionPara = document.createElement('p');
+                    questionPara.textContent = questionObj.question;
+                    questionDiv.appendChild(questionPara);
+
+                    // Create radio buttons for each option
+                    questionObj.options.forEach(option => {
+                        const label = document.createElement('label');
+                        const radio = document.createElement('input');
+                        radio.setAttribute('type', 'radio');
+                        radio.setAttribute('name', questionObj.question);
+                        radio.setAttribute('value', option);
+                        label.appendChild(radio);
+                        label.appendChild(document.createTextNode(option));
+                        questionDiv.appendChild(label);
+                        questionDiv.appendChild(document.createElement('br'));
+                    });
+
+                    // Append the question to the quiz container
+                    quizContainer.appendChild(questionDiv);
+                });
+            })
+            .catch(error => console.error('Error loading JSON file:', error));
+    </script>
+</body>
+</html>
