@@ -3,11 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titre de la page</title>
+    <title>Quizz</title>
 </head>
 <body>
-    <h1>Contenu de la page23</h1>
-    <p>Ceci est un exemple de contenu.</p>
+    <h1>Page d'accueil</h1>
+    <a href="questions.html">lien vers le quizz</a>
     <h1>Ali</h1>
+    <form>
+        <fieldset>
+            <legend>Sélectionner un niveau de difficulté</legend>
+            <input type="radio" id="difficulte1" name="difficulte" value="debutant">
+            <label for="difficulte1">Débutant</label>
+            <br>
+            <input type="radio" id="difficulte2" name="difficulte" value="intermediaire" checked>
+            <label for="difficulte2">Intermédiaire</label>
+            <br>
+            <input type="radio" id="difficulte3" name="difficulte" value="confirme">
+            <label for="difficulte3">Confirmé</label>
+        </fieldset>
+
+        <br>
+
+        <label for="theme">Sélectionner un thème</label><br>
+        <select name="theme" id="question">
+            <option value="choix0">--Sélectionner--</option>
+            <option value="choix1">Animaux</option>
+            <option value="choix2">Politique</option>
+            <option value="choix3">Boeing</option>
+            <option value="choix4">Airbus</option>
+        </select><br><br>
+        <input type="submit" value="Commencer">
+    </form>
 </body>
 </html>
