@@ -14,8 +14,9 @@
         <form id="quiz-form">
             <label for="question1">Qui fut le premier président de la République dans l'Histoire de France ?</label><br>
             <fieldset>
+                
+                <p><input type="radio" name="question1" value="Maiximilien_de_Robespierre" checked>Maximilien de Robespierre</p>
                 <p><input type="radio" name="question1" value="Louis_Napoleon_Bonaparte">Louis Napoléon Bonaparte</p>
-                <p><input type="radio" name="question1" value="Maiximilien_de_Robespierre">Maximilien de Robespierre</p>
                 <p><input type="radio" name="question1" value="Charles_de_Gaulle">Charles de Gaulle</p>
                 
                 <p><input type="radio" name="question1"  value="Adolphe_Thiers">Adolphe Thiers</p>
@@ -28,15 +29,17 @@
     <script>
         function checkAnswers() {
             
-            var q=document.getElementsByName("question1").value;
-            
+            var q=document.querySelector('input[name="question1"]:checked').value;
+
+
+
             console.log("q= "+q);
-           /* if (q=="Louis_Napoleon_Bonaparte"){
+            if (q=="Louis_Napoleon_Bonaparte"){
                 result.innerHTML=1;
             }
             else{
                 result.innerHTML=0;
-            }*/
+            }
         }
     </script>
 </body>
