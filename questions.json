@@ -1,7 +1,8 @@
 {
-"questions":[
+"questions":
+[
     {
-        "question": "Quel est le plus grand animal terrestre ?",
+        "question": "1sssQuel est le plus grand animal terrestre ?",
         "options": ["Éléphant", "Girafe", "Rhinocéros", "Hippopotame"],
         "answer": "Éléphant"
     },
@@ -11,19 +12,19 @@
         "answer": "Zèbre"
     },
     {
-        "question": "Quel animal vole et se tourne la tête presque complètement en arrière ?",
+        "question": "Quel bird vole et se tourne la tête presque complètement en arrière ?",
         "options": ["Hibou", "Aigle", "Corbeau", "Faucon"],
         "answer": "Hibou"
     },
     {
-        "question": "Quel animal vole et se tourne la tête presque complètement en arrière ?",
-        "options": ["Hibou", "Aigle", "Corbeau", "Faucon"],
-        "answer": "Hibou"
+        "question": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx?",
+        "options": ["bird1", "bird2", "bird3", "bird4"],
+        "answer": "bird1"
     },
     {
-        "question": "Quel animal vole et se tourne la tête presque complètement en arrière ?",
-        "options": ["Hibou", "Aigle", "Corbeau", "Faucon"],
-        "answer": "Hibou"
+        "question": "y ?",
+        "options": ["water", "water1", "water2", "water3"],
+        "answer": "water"
     }
 
 ]

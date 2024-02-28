@@ -10,7 +10,9 @@
         <h1>Animal Quiz</h1>
     </header>
     <main id="quiz-container">
-        <!-- Questions will be dynamically added here -->
+        <!-- Questions will will be here -->
+           <!-- Button to check answers -->
+    <button onclick="checkAnswers()">Check Answers</button>
     </main>
 
     <script>
@@ -47,6 +49,18 @@
                 });
             })
             .catch(error => console.error('Error loading JSON file:', error));
+
+            fetch('questions.json')
+            .then(response => response.json())
+            .then(data => 
+            
+            function checkAnswers(){
+                var correctAnswers=[];
+                var userAnswers=[];
+                data.forEach(questionObj => {correctAnswers.push(questionObj.answer);});
+        console.log(correctAnswers);
+            }
+            
     </script>
 </body>
 </html>
