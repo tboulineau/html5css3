@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questionnaire json</title>
+
+    <script>
+    function f() {
+
+
+        var people = [];
+     
+        import('./testjson.json') 
+            .then(response => response.json())
+            .then(data => {
+                    for (var i = 0; i<data.questions.length; i++){
+                        let question = data.questions[i].question;
+                        let options = data.questions[i].options;
+                        let answer = data.quesitons[i].answer;
+                            document.querySelector("#tb1").innerHTML += `
+                                <tr>
+                                    <td>${question}</td>
+                                    <td>${options}</td>
+                                    <td>${answer}</td>
+                                </tr>`;
+                    }
+                })
+     
+     
+     };
+     </script>
+
+
+</head>
+<body>
+
+    <button type="button" onclick="f()">bouton</button>
+</body>
+</html>
