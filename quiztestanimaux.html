@@ -50,15 +50,25 @@
             })
             .catch(error => console.error('Error loading JSON file:', error));
 
-            fetch('questions.json')
+            var correctAnswers=[];
+
+            fetch('questions.json') 
             .then(response => response.json())
-            .then(data => 
-            
+            .then(data => {
+                    for (var i = 0; i<data.questions.length; i++){
+                        var correctAnswers=[];
+                        correctAnswers.push(data.questions[i].answer);
+
+                    }
+                })
+     
+     
+
             function checkAnswers(){
-                var correctAnswers=[];
                 var userAnswers=[];
-                data.forEach(questionObj => {correctAnswers.push(questionObj.answer);});
-        console.log(correctAnswers);
+                for (var i=0;i<correctAnswers.length;i++){
+
+        console.log(correctAnswers[i]);}
             }
             
     </script>
