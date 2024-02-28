@@ -1,4 +1,4 @@
-from flask import Flask 
+from flask import Flask, render_template 
 
 app = Flask(__name__,static_folder=".",static_url_path='')
 
@@ -12,6 +12,8 @@ def echo(thing):
   
 @app.route('/quiz')
 def quiz():
-  return app.send_static_file('quiz_json.html')
+  return render_template('quiz_json.html',question="question",options="opitons",
+                         answer="answer")
+
 
 app.run(port=8080, debug=True)
