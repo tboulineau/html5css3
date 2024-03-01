@@ -20,10 +20,20 @@ def quiz():
     difficulte = request.args.get('difficulte')
     theme = request.args.get('theme')
 
-  with open("questions.json","r+") as fichier:
-    json.load(fichier)
+  with open("questions.json","r") as fichier:
+    data = json.load(fichier)
+  #print(data)
+  #for question in data["questions"]:
+  #  print(animaux["question"])
+  question = data["questions"]
+  print(question[0].question)
 
-  return render_template('quiz_json.html', question="question", answer="answer", options="options")
+  return render_template('question_template.html', 
+                         question=question,
+                         reponse1=reponse1,
+                         reponse2=reponse2,
+                         reponse3=reponse3,
+                         reponse4=reponse4)
   #return render_template('quiz_json.html',nombre=nombre,apellido=apellido)
 
 if __name__=='__main__':

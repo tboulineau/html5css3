@@ -1,8 +1,8 @@
 {
-"questions":
+"animaux":
 [
     {
-        "question": "1sssQuel est le plus grand animal terrestre ?",
+        "question": "Quel est le plus grand animal terrestre ?",
         "options": ["Éléphant", "Girafe", "Rhinocéros", "Hippopotame"],
         "answer": "Éléphant"
     },
