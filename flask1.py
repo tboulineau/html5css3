@@ -22,13 +22,24 @@ def quiz():
 
   with open("questions.json","r") as fichier:
     data = json.load(fichier)
+    #print(data)
   #print(data)
-  #for question in data["questions"]:
-  #  print(animaux["question"])
-  question = data["questions"]
-  print(question[0].question)
+  for question in data["animaux"]:
+    print(question["question"])
 
-  return render_template('question_template.html', 
+  # Accéder à l'attribut "question"*
+  #print("ANINAMUXNLFKJSLFKJQSDMLDFKQHSFDLM")
+  #print(data["animaux"])
+  #for question in data["animaux"]:
+  #    print(question["question"])
+    
+  question = data["animaux"][0]["question"]
+  reponse1 = data["animaux"][0]["options"][0]
+  reponse2 = data["animaux"][0]["options"][1]
+  reponse3 = data["animaux"][0]["options"][2]
+  reponse4 = data["animaux"][0]["options"][3]
+
+  return render_template('question_template.html',
                          question=question,
                          reponse1=reponse1,
                          reponse2=reponse2,
