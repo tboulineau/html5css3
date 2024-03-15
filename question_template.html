@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>questionnaire politique</title>
+    <title>Quizz</title>
 </head>
 <body>
     <header>
@@ -12,26 +12,24 @@
     <main>
 
         <form id="quiz-form">
-            <label for="question">{{question}}</label><br>
+            <h1 id="question">Question</h1><br>
             <fieldset>
                 <legend>Une seule réponse possible :</legend>
                 <div>
                   <input type="radio" id="reponse1" name="reponse" value="reponse1"/>
-                  <label for="reponse1">{{reponse1}}</label>
+                  <label for="reponse1">Réponse 1</label>
                 </div>
-              
                 <div>
                     <input type="radio" id="reponse2" name="reponse" value="reponse2"/>
-                    <label for="reponse2">{{reponse2}}</label>
+                    <label for="reponse2">Réponse 2</label>
                   </div>
-              
                   <div>
                     <input type="radio" id="reponse3" name="reponse" value="reponse3"/>
-                    <label for="reponse3">{{reponse3}}</label>
+                    <label for="reponse3">Réponse 3</label>
                   </div>
                   <div>
                     <input type="radio" id="reponse4" name="reponse" value="reponse4"/>
-                    <label for="reponse4">{{reponse4}}</label>
+                    <label for="reponse4">Réponse 4</label>
                   </div>
               </fieldset>
             <button type="button" onclick="checkAnswers()">Vérifier les réponses</button>
@@ -40,13 +38,22 @@
     </main>
     
     <script>
+        let questions = '{{questions | tojson}}';
+        let reponses = '{{reponses | tojson}}';
+        console.log(questions);
+        console.log(reponses);
+
+        function affichage(index){
+            document.getElementById('question').textContent = questions[index];
+            document.getElementById('reponse1').textContent = reponses[index][0];
+            document.getElementById('reponse2').textContent = reponses[index][1];
+            document.getElementById('reponse3').textContent = reponses[index][2];
+            document.getElementById('reponse4').textContent = reponses[index][3];
+        }
+
         function checkAnswers() {
-            
-            var q=document.querySelector('input[name="question1"]:checked').value;
-
-
-
-            console.log("q= "+q);
+            var q = document.querySelector('input[name="question1"]:checked').value;
+            console.log("q= " + q);
             if (q=="Louis_Napoleon_Bonaparte"){
                 result.innerHTML=1;
             }
@@ -54,6 +61,8 @@
                 result.innerHTML=0;
             }
         }
+
+        affichage(1);
     </script>
 </body>
 </html>

@@ -10,6 +10,10 @@ def home():
 @app.route('/echo/<thing>')
 def echo(thing):
   return "Hello : %s" % thing
+
+@app.route('/quizanimaux')
+def quiztestanimaux():
+  return render_template('quiztestanimaux.html')
   
 @app.route('/quiz')
 def quiz():
@@ -22,10 +26,6 @@ def quiz():
 
   with open("questions.json","r") as fichier:
     data = json.load(fichier)
-    #print(data)
-  #print(data)
-  for question in data["animaux"]:
-    print(question["question"])
 
   # Accéder à l'attribut "question"*
   #print("ANINAMUXNLFKJSLFKJQSDMLDFKQHSFDLM")
@@ -33,19 +33,28 @@ def quiz():
   #for question in data["animaux"]:
   #    print(question["question"])
     
-  question = data["animaux"][0]["question"]
-  reponse1 = data["animaux"][0]["options"][0]
-  reponse2 = data["animaux"][0]["options"][1]
-  reponse3 = data["animaux"][0]["options"][2]
-  reponse4 = data["animaux"][0]["options"][3]
+  questions = []
+  reponses = []
+  '''
+  print("affichage test")
+  for i in range(0, 4):
+     print("question " + str(i) + " : " + data["animaux"][i]["question"])
+     print("reponses " + str(i) + " : " + str(data["animaux"][i]["options"]))
+  '''
+  
+  for i in range(0, 3):
+     print(i)
+     questions.append(data["animaux"][i]["question"])
+     print(questions[i])
+     reponses.append(data["animaux"][i]["options"])
+     print(reponses[i])
 
+  print("questions : " + str(questions))
+  print("réponses : " + str(reponses))
+  
   return render_template('question_template.html',
-                         question=question,
-                         reponse1=reponse1,
-                         reponse2=reponse2,
-                         reponse3=reponse3,
-                         reponse4=reponse4)
-  #return render_template('quiz_json.html',nombre=nombre,apellido=apellido)
+                         questions = questions,
+                         reponses = reponses)
 
 if __name__=='__main__':
 	app.run(debug=True,host='0.0.0.0')
