@@ -28,9 +28,9 @@
         },
         "question_5":
         {
-            "question":"Comment s'appelle le personnage principal dans le film 'Cars' ?",
-            "options":["Flash McQueen",""],
-            "answer":"Flash McQueen"
+            "question":"Qui joue FlashMcQueen dans 'Cars' en version originale ?",
+            "options":["Paul Newman","Michael Keaton", "Owen Wilson", "Will Smith"],
+            "answer":"Owen Wilson"
         }
     }   
 }
