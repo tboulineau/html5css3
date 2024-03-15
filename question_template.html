@@ -43,6 +43,8 @@
         let questions = JSON.parse('{{questions | safe}}');
         let reponses = JSON.parse('{{reponses | safe}}');
         let corrections = JSON.parse('{{corrections | safe}}');
+        let score = 0;
+        affichage(index);
         //console.log(questions);
         //console.log(reponses);
 
@@ -53,6 +55,8 @@
             document.getElementById('reponse3').textContent = reponses[index][2];
             document.getElementById('reponse4').textContent = reponses[index][3];
         }
+
+        
 
 /*
         var ele = document.getElementsByName('gender');
@@ -87,11 +91,10 @@
                 index++;
             }else{
                 console.log("Terminé")
+                window.location.href = "/fin?score=" + score;
             }
             console.log(index);
         }
-
-        affichage(index);
     </script>
 </body>
 </html>

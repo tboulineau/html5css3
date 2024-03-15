@@ -1,13 +1,38 @@
 from flask import Flask, render_template, request
 import json
 import random
+import os
 
 app = Flask(__name__,static_folder=".",static_url_path='',template_folder='.')
 
 @app.route('/') # première page où l'utilisateur saisit ses préférences
 def home():
   return app.send_static_file('index.html')
-  
+
+@app.route('/fin')
+def fin():
+  if request.method == 'POST':
+    score = request.form['score']
+  else:
+    score = request.args.get('score')
+
+  return render_template('fin.html', score=score)
+
+@app.route('/enregistrer',methods=['POST','GET'])
+def enregistrer():
+   if request.method == 'POST':
+       nom = request.form['nom']
+       score = request.form['score']
+   else:
+       nom = request.args.get('nom')
+       score = request.args.get('score')
+   if nom != "" and score != "":
+    with open("scores.txt", "r+") as fichier_scores:
+        fichier_scores.seek(0, os.SEEK_END)
+        fichier_scores.write(nom+"\t"+score+"\n")
+        fichier_scores.close()
+
+
 @app.route('/quiz')
 def quiz():
   if request.method == 'POST':
@@ -19,7 +44,6 @@ def quiz():
 
   print("Questionnaire commencé avec le thème : " + theme)
 
-  theme = "animaux"
   match theme:
     case "avions":
       fichierJSON = "sujet_avions.json"
