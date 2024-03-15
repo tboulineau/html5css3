@@ -54,14 +54,34 @@
             document.getElementById('reponse4').textContent = reponses[index][3];
         }
 
+/*
+        var ele = document.getElementsByName('gender');
+ 
+            for (i = 0; i < ele.length; i++) {
+                if (ele[i].checked)
+                    document.getElementById("result").innerHTML
+                        = "Gender: " + ele[i].value;
+*/
+
         function checkAnswers() {
-            var q = document.querySelector('input[name="question1"]:checked').value;
-            console.log("q= " + q);
-            if (q=="Louis_Napoleon_Bonaparte"){
+            var q = document.getElementByName('reponse');
+           // var q = document.querySelector('input[name="question1"]:checked').value;
+            console.log("reponse selectionnee = " + q);
+            var i=0, choix=0;
+            while (i < q.length || choix!=0) {
+                if (q[i].checked)
+                {
+                    var choix= q;
+                }
+                i++;
+            }
+            if (choix==corrections){
                 result.innerHTML=1;
+                console.log("bonne repoonse");
             }
             else{
                 result.innerHTML=0;
+                console.log("mauvaise reponse");
             }
         }
 
