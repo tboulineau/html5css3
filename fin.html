@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Félicitations</title>
+</head>
+<body>
+    <h1>Vous avez terminé le quizz !</h1>
+    <p>Vous avez obtenu un score de {{score}} points !</p>
+    <form action="/enregistrer" method="post">
+        <label for="nom">Renseignez votre nom pour enregistrer votre score :</label><br>
+        <input type="text" id="nom" name="nom"><br><br>
+        <input type="submit" value="Envoyer">
+    </form>
+    
+</body>
+</html>
