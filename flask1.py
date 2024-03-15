@@ -19,7 +19,7 @@ def quiz():
 
   print("Questionnaire commencé avec le thème : " + theme)
 
-  theme = "avions"
+  theme = "animaux"
   match theme:
     case "avions":
       fichierJSON = "sujet_avions.json"

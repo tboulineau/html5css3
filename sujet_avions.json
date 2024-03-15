@@ -8,14 +8,14 @@
             "answer": "Clément Ader"
         },
         {
-            "question":"Quel fut le premier avion opérationnel à réaction de l'Histoire ?",
+            "question":"Quel fut le premier avion opérationnel à réaction de l Histoire ?",
             "options": ["Le Me 262", "Le Bf 109", "Le Bell X-1", "Le Gloster Meteor"],
             "answer": "Le Me 262"
         },
         {
-            "question":"Quel est l'avion le plus lourd au monde ?",
-            "options": ["L'Airbus A380", "Le Boeing 747", "Le Lockheed C-5 Galaxy", "L'Antonov An-225"],
-            "answer": "L'Antonov An-225"
+            "question":"Quel est l avion le plus lourd au monde ?",
+            "options": ["L Airbus A380", "Le Boeing 747", "Le Lockheed C-5 Galaxy", "L Antonov An-225"],
+            "answer": "L Antonov An-225"
         },
         {
             "question":"Dans quel avion vole Tom Cruise dans Top Gun ?",
