@@ -1,7 +1,7 @@
 {
     "title":"quizz géographie",
     "content" :
-    {
+    [
         "question_1":
         {
             "question": "Quel est le deuxième pays ayant la plus grande superficie ?",
@@ -32,5 +32,5 @@
             "options":["RDA","RFA", "aucun"],
             "answer":"RDA"
         }
-    }   
+    ]   
 }

@@ -1,7 +1,7 @@
 {
     "title":"quizz politique",
     "content" :
-    {
+    [
         "question_1":
         {
             "question": "Qui fut le premier président de la république française ?",
@@ -33,5 +33,5 @@
             "options":["Robert Ménard","Louis Aliot", "Christian Estrosi", "Nicolas Dupont-Aingan"],
             "answer":"Robert Ménard"
         }
-    }   
+    ]   
 }
