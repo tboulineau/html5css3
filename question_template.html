@@ -8,6 +8,7 @@
 <body>
     <header>
         <h1>Quizz</h1>
+        
     </header>
     <main>
 
@@ -32,21 +33,22 @@
                     <label id="reponse4">Réponse 4</label>
                   </div>
               </fieldset>
-            <button type="button" onclick="checkAnswers()">Vérifier les réponses</button>
+            <button type="button" onclick="process()">Vérifier les réponses</button>
         </form>
         <div id="result"></div>
     </main>
     
     <script>
+        var index = 0; 
         let questions = JSON.parse('{{questions | safe}}');
         let reponses = JSON.parse('{{reponses | safe}}');
+        let corrections = JSON.parse('{{corrections | safe}}');
         //console.log(questions);
         //console.log(reponses);
 
         function affichage(index){
             document.getElementById('question').textContent = questions[index];
             document.getElementById('reponse1').textContent = reponses[index][0];
-            //console.log(reponses[index][0])
             document.getElementById('reponse2').textContent = reponses[index][1];
             document.getElementById('reponse3').textContent = reponses[index][2];
             document.getElementById('reponse4').textContent = reponses[index][3];
@@ -63,7 +65,18 @@
             }
         }
 
-        affichage(0);
+        function process(){
+            if(index < questions.length){
+                affichage(index);
+                index++;
+            }else{
+                console.log("Terminé")
+            }
+            console.log(index);
+            
+        }
+
+        affichage(index);
     </script>
 </body>
 </html>
