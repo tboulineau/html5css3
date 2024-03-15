@@ -1,36 +1,31 @@
 {
     "title":"quizz cinéma",
     "content" :
-    {
-        "question_1":
+    [
         {
             "question": "Qui a réalisé 'Le Voyage dans la Lune' ?",
             "options": ["Les frères Lumière", "Fritz Lang", "Georges Méliès", "Thomas Edison", "Robert Murneau"],
             "answer": "Georges Méliès"
         },
-        "question_2":
         {
             "question":"Quel film a gagné la palme d'or au festival de Cannes 2023 ?",
             "options": ["La Zone d'intérêt", "Anatomie d'une chute", "La passion de Dodin Bouffant", "Pauvres Créatures"],
             "answer": "Anatomie d'une chute"
         },
-        "question_3":
         {
             "question":"Quel acteur détient le record du nombre d'oscars du meilleur acteur ?",
             "options": ["Leonardo DiCaprio", "Robert De Niro", "Tom Hanks", "Daniel Day-Lewis"],
             "answer": "Daniel Day-Lewis"
         },
-        "question_4":
         {
             "question":"Qui a réalisé 'Le Parrain' ?",
             "options":["Steven Spielberg", "Stanley Kubrick", "Orson Welles", "Francis Ford Coppola"],
             "answer":"Francis Ford Coppola"
         },
-        "question_5":
         {
-            "question":"Comment s'appelle le personnage principal dans le film 'Cars' ?",
-            "options":["Flash McQueen",""],
-            "answer":"Flash McQueen"
+            "question":"Qui joue FlashMcQueen dans 'Cars' en version originale ?",
+            "options":["Paul Newman","Michael Keaton", "Owen Wilson", "Will Smith"],
+            "answer":"Owen Wilson"
         }
-    }   
+    ] 
 }

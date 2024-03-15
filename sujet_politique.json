@@ -1,37 +1,32 @@
 {
     "title":"quizz politique",
     "content" :
-    {
-        "question_1":
+    [
         {
             "question": "Qui fut le premier président de la république française ?",
             "options": ["Charles de Gaulle", "Adolphe Thiers", "Louis-Napoléon Bonaparte", "Maximilien Robespierre"],
             "answer": "Louis Napoléon Bonaparte"
         },
-        "question_2":
         {
             "question":"Quel fut le résultat du référendum de 2005 sur l'établissement d'une Constitution européenne ?",
             "options": ["Pour", "Contre"],
             "answer": "Contre",
             "fun-fact": "Sarko l'a adopté quand même en 2007"
         },
-        "question_3":
         {
             "question":"Quel est le parti de Harlem Désir ?",
             "options": ["France insoumise", "Parti Socialiste", "Les Républicains", "Rassemblement National"],
             "answer": "Parti Socialiste"
         },
-        "question_4":
         {
             "question":"Combien y a-t-il de députés à l'Assemblée Nationale ?",
             "options":["100", "500", "755","473", "577",  "689"],
             "answer":"577"
         },
-        "question_5":
         {
             "question":"Qui est le maire de Béziers ?",
             "options":["Robert Ménard","Louis Aliot", "Christian Estrosi", "Nicolas Dupont-Aingan"],
             "answer":"Robert Ménard"
         }
-    }   
+    ]   
 }
