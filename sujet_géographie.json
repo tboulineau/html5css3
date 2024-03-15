@@ -1,0 +1,36 @@
+{
+    "title":"quizz géographie",
+    "content" :
+    {
+        "question_1":
+        {
+            "question": "Quel est le deuxième pays ayant la plus grande superficie ?",
+            "options": ["Russie", "États-Unis", "Chine", "Canada", "Vatican"],
+            "answer": "Canada"
+        },
+        "question_2":
+        {
+            "question":"Quelle est la capitale du Tadjikistan ?",
+            "options": ["Achgabat", "Douchanbé", "Bichkek", "Tachkent"],
+            "answer": "Douchanbé"
+        },
+        "question_3":
+        {
+            "question":"Quel est le département français dont le numéro est 27 ?",
+            "options": ["Vendée", "Drôme", "Eure-et-Loire", "Eure", "Finistère", "Doubs"],
+            "answer": "Eure"
+        },
+        "question_4":
+        {
+            "question":"Combien y a-t-il d'habitants au Nigéria ?",
+            "options":["53 millions", "117 millions", "213 millions","335 millions"],
+            "answer":"231 millions"
+        },
+        "question_5":
+        {
+            "question":"Le land de Saxe en Allemagne faisait-il partie de la RDA ou de la RFA ?",
+            "options":["RDA","RFA", "aucun"],
+            "answer":"RDA"
+        }
+    }   
+}
