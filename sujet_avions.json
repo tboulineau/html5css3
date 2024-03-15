@@ -26,6 +26,11 @@
             "question":"Quel avion est utilisé par la patrouille de France ?",
             "options":["F16", "F18", "BAe Hawk T.1", "Alphajet"],
             "answer":"Alphajet"
+        },
+        {
+            "question":"Quelle est la puissance maximum d'un Dassault Rafale ?",
+            "options":["5 tonnes", "10 tonnes", "15 tonnes", "20 tonnes"],
+            "answer":"15 tonnes"
         }
     ] 
 }
