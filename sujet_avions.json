@@ -1,0 +1,36 @@
+{
+    "title":"quizz avions",
+    "content" :
+    {
+        "question_1":
+        {
+            "question": "Qui a fabriqué le premier avion ?",
+            "options": ["Les frères Wright", "Clément Ader", "Alberto Santos-Dumont", "Thomas Edison", "Les frères Montgolfier"],
+            "answer": "Clément Ader"
+        },
+        "question_2":
+        {
+            "question":"Quel fut le premier avion opérationnel à réaction de l'Histoire ?",
+            "options": ["Le Me 262", "Le Bf 109", "Le Bell X-1", "Le Gloster Meteor"],
+            "answer": "Le Me 262"
+        },
+        "question_3":
+        {
+            "question":"Quel est l'avion le plus lourd au monde ?",
+            "options": ["L'Airbus A380", "Le Boeing 747", "Le Lockheed C-5 Galaxy", "L'Antonov An-225"],
+            "answer": "L'Antonov An-225"
+        },
+        "question_4":
+        {
+            "question":"Dans quel avion vole Tom Cruise dans Top Gun ?",
+            "options":["Un Mig 28", "Un F14", "Un F15", "Un Su 27"],
+            "answer":"Un F14"
+        },
+        "question_5":
+        {
+            "question":"Quel avion est utilisé par la patrouille de France ?",
+            "options":["F16", "F18", "BAe Hawk T.1", "Alphajet"],
+            "answer":"Alphajet"
+        }
+    }   
+}
