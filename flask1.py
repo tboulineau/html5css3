@@ -51,7 +51,7 @@ def quiz():
   return render_template('question_template.html',
                          questions = json.dumps(questions),
                          reponses = json.dumps(reponses),
-                         correction = json.dumps(corrections))
+                         corrections = json.dumps(corrections))
 
 if __name__=='__main__':
 	app.run(debug=True,host='0.0.0.0')
