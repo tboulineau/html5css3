@@ -5,32 +5,50 @@
         {
             "question": "Qui a fabriqué le premier avion ?",
             "options": ["Les frères Wright", "Clément Ader", "Alberto Santos-Dumont", "Thomas Edison", "Les frères Montgolfier"],
-            "answer": "Clément Ader"
-        },
-        {
-            "question":"Quel fut le premier avion opérationnel à réaction de l Histoire ?",
-            "options": ["Le Me 262", "Le Bf 109", "Le Bell X-1", "Le Gloster Meteor"],
-            "answer": "Le Me 262"
-        },
-        {
-            "question":"Quel est l avion le plus lourd au monde ?",
-            "options": ["L Airbus A380", "Le Boeing 747", "Le Lockheed C-5 Galaxy", "L Antonov An-225"],
-            "answer": "L Antonov An-225"
+            "answer": "Clément Ader",
+            "difficulte": "debutant"
         },
         {
             "question":"Dans quel avion vole Tom Cruise dans Top Gun ?",
             "options":["Un Mig 28", "Un F14", "Un F15", "Un Su 27"],
-            "answer":"Un F14"
+            "answer":"Un F14",
+            "difficulte":"debutant"
         },
         {
             "question":"Quel avion est utilisé par la patrouille de France ?",
             "options":["F16", "F18", "BAe Hawk T.1", "Alphajet"],
-            "answer":"Alphajet"
+            "answer":"Alphajet",
+            "difficulte":"debutant"
         },
         {
-            "question":"Quelle est la puissance maximum d'un Dassault Rafale ?",
-            "options":["5 tonnes", "10 tonnes", "15 tonnes", "20 tonnes"],
-            "answer":"15 tonnes"
+            "question":"Quel fut le premier avion opérationnel à réaction de l Histoire ?",
+            "options": ["Le Me 262", "Le Bf 109", "Le Bell X-1", "Le Gloster Meteor"],
+            "answer": "Le Me 262",
+            "difficulte":"intermediaire"
+        },
+        {
+            "question":"Quel est l avion le plus lourd au monde ?",
+            "options": ["L Airbus A380", "Le Boeing 747", "Le Lockheed C-5 Galaxy", "L Antonov An-225"],
+            "answer": "L Antonov An-225",
+            "difficulte":"intermediaire"
+        },
+        {
+            "question":"Combien le Lockheed L-1011 possède-t-il de réacteurs ?",
+            "options":["1","2","3","4"],
+            "answer":"3",
+            "difficulte":"intermediaire"
+        },
+        {
+            "question":"Quel modèle d'avions utilise la compagnie Ryanair ?",
+            "options":["Boeing 737", "Boeing 747", "Boeing 757", "Airbus a320", "Airbus a330", "Airbus a350"],
+            "answer":"Boeing 737",
+            "difficulte":"confirme"
+        },
+        {
+            "question":"Quelle est la poussée maximum d un Dassault Rafale ?",
+            "options":["15 tonnes", "20 tonnes", "25 tonnes", "35 tonnes"],
+            "answer":"15 tonnes",
+            "difficulte":"confirme"
         }
     ] 
 }

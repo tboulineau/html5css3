@@ -5,27 +5,54 @@
         {
             "question": "Qui a réalisé  Le Voyage dans la Lune  ?",
             "options": ["Les frères Lumière", "Fritz Lang", "Georges Méliès", "Thomas Edison", "Robert Murneau"],
-            "answer": "Georges Méliès"
-        },
-        {
-            "question":"Quel film a gagné la palme d or au festival de Cannes 2023 ?",
-            "options": ["La Zone d intérêt", "Anatomie d une chute", "La passion de Dodin Bouffant", "Pauvres Créatures"],
-            "answer": "Anatomie d une chute"
-        },
-        {
-            "question":"Quel acteur détient le record du nombre d oscars du meilleur acteur ?",
-            "options": ["Leonardo DiCaprio", "Robert De Niro", "Tom Hanks", "Daniel Day-Lewis"],
-            "answer": "Daniel Day-Lewis"
+            "answer": "Georges Méliès",
+            "difficulte": "debutant"
         },
         {
             "question":"Qui a réalisé  Le Parrain  ?",
             "options":["Steven Spielberg", "Stanley Kubrick", "Orson Welles", "Francis Ford Coppola"],
-            "answer":"Francis Ford Coppola"
+            "answer":"Francis Ford Coppola",
+            "difficulte":"debutant"
         },
         {
             "question":"Qui joue FlashMcQueen dans  Cars  en version originale ?",
             "options":["Paul Newman","Michael Keaton", "Owen Wilson", "Will Smith"],
-            "answer":"Owen Wilson"
+            "answer":"Owen Wilson",
+            "difficulte": "debutant"
+        },
+        {
+            "question":"Quel film a gagné la palme d or au festival de Cannes 2023 ?",
+            "options": ["La Zone d intérêt", "Anatomie d une chute", "La passion de Dodin Bouffant", "Pauvres Créatures"],
+            "answer": "Anatomie d une chute",
+            "difficulte": "intermediaire"
+        },
+        {
+            "question":"Quel acteur détient le record du nombre d oscars du meilleur acteur ?",
+            "options": ["Leonardo DiCaprio", "Robert De Niro", "Tom Hanks", "Daniel Day-Lewis"],
+            "answer": "Daniel Day-Lewis",
+            "difficulte": "intermediaire"
+        },
+        {
+            "question":"Quel est le vrai nom de Bourvil ?",
+            "options":["André Durand", "André Martin", "André Dupont", "Mathias Vignereau", "André Raimbourg", "Jean-Marc Boulineau"]
+        },
+        {
+            "question":"Quel est le premier film de Charlie Chaplin ?",
+            "options":["Les temps modernes", "Le Dictateur", "La Ruée vers l'or", "Le Kid"],
+            "answer":"Le Kid",
+            "difficulte":"confirme"
+        },
+        {
+            "question":"Lequel de ces films de Disney est sorti après 1979 ?",
+            "options":["Les Aristochats", "Robin des bois","Rox et Rouky", "Le livre de la jungle"],
+            "answer":"Rox et Rouky",
+            "difficulte":"confirme"
+        },
+        {
+            "question":"Combien de films ont dépassé les 2 milliards de dollars au box office mondial ?",
+            "options":["0","1","2","3","4","5","6","7"],
+            "answer":"6",
+            "difficulte":"confirme"
         }
     ] 
 }

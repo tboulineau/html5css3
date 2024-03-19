@@ -5,27 +5,63 @@
     {
         "question": "Quel est le plus grand animal terrestre ?",
         "options": ["Éléphant", "Girafe", "Rhinocéros", "Hippopotame"],
-        "answer": "Éléphant"
+        "answer": "Éléphant",
+        "difficulte":"debutant"
     },
     {
         "question": "Quel animal est connu pour ses rayures noires et blanches ?",
         "options": ["Zèbre", "Tigre", "Lion", "Girafe"],
-        "answer": "Zèbre"
+        "answer": "Zèbre",
+        "difficulte":"debutant"
     },
     {
-        "question": "Quel bird vole et se tourne la tête presque complètement en arrière ?",
+        "question": "Quel oiseau vole et se tourne la tête presque complètement en arrière ?",
         "options": ["Hibou", "Aigle", "Corbeau", "Faucon"],
-        "answer": "Hibou"
+        "answer": "Hibou",
+        "difficulte":"debutant"
     },
     {
-        "question": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx?",
-        "options": ["bird1", "bird2", "bird3", "bird4"],
-        "answer": "bird1"
+        "question": "Quel animal terrestre est le plus rapide ?",
+        "options": ["cheval", "guépard", "lévrier", "panthère"],
+        "answer": "guépard",
+        "difficulte":"debutant"
     },
     {
-        "question": "y ?",
-        "options": ["water", "water1", "water2", "water3"],
-        "answer": "water"
+        "question": "Quel animal aérien est le plus rapide ?",
+        "options": ["pigeon voyageur", "aigle royal", "albatros hurleur", "faucon pélerin"],
+        "answer": "faucon pélerin",
+        "difficulte":"intermediaire"
+    },
+    {
+        "question": "Quel animal marin est le plus rapide ?",
+        "options":["poisson d'argent", "saumon", "esturgeon", "espadon"],
+        "answer":"espadon",
+        "difficulte":"intermediaire"
+    },
+   
+    {
+        "question":"Combien les poulpes ont-ils de coeurs ?",
+        "options":["0","1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+        "answer":"3",
+        "difficulte":"intermediaire"
+    },
+    {
+        "question":"A quel ordre appartient la limule ?",
+        "options":["xiphosura", "chelicerata", "trilobita", "merostomata"],
+        "answer":"xiphosura",
+        "difficulte":"confirme"
+    },
+    {
+        "question":"Quel est l'intrus ?",
+        "options":["homo sapiens", "homo erectus", "homo georgicus", "homo dalecarlus", "homo floresiensis"],
+        "answer":"homo dalecarlus",
+        "difficulte":"confirme"
+    },
+    {
+        "question":"A quelle classe appartient la iule ?",
+        "options":["myriapoda", "diplopoda", "arthropoda", "chilopoda"],
+        "answer":"diplopoda",
+        "difficulte":"confirme"
     }
 
 ]
