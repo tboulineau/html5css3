@@ -35,7 +35,7 @@
                   </div>
                 -->
               </fieldset>
-            <button type="button" onclick="checkAnswers(score)">Vérifier les réponses</button>
+            <button type="button" onclick="checkAnswers()">Vérifier les réponses</button>
         </form>
         <div id="result"></div>
     </main>
@@ -47,7 +47,6 @@
         let corrections = JSON.parse('{{corrections | safe}}');
         var score = 0;
         affichage(index);
-        index++;
         //console.log(questions);
         //console.log(reponses);
 
@@ -77,15 +76,15 @@
                 fieldset.appendChild(label);
             }
         }
-        function checkAnswers(score) {
+        function checkAnswers() {
             //score=0;
-           var q= document.querySelector('input[name="reponse"]:checked').value;
-           console.log("vrai réponse : ",corrections[0]);
+           var q = document.querySelector('input[name="reponse"]:checked').value;
+           console.log("vrai réponse : ", corrections[index]);
 
            var label = document.getElementById(q);
             console.log("reponse selectionnee = " + q);
 
-            if (q==corrections[0]){
+            if (q==corrections[index]){
                 result.innerHTML=1;
                 score++;
                 console.log("bonne reponse");
@@ -95,9 +94,9 @@
                 result.innerHTML=0;
                 console.log("mauvaise reponse, score : ", score);
             }
-            if(index < questions.length){
-                affichage(index);
+            if(index + 1 < questions.length){
                 index++;
+                affichage(index);
             }else{
                 console.log("Terminé")
                 window.location.href = "/fin?score=" + score;
