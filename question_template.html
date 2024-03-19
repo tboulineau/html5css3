@@ -84,7 +84,6 @@
            var q = document.querySelector('input[name="reponse"]:checked').value;
            console.log("vrai réponse : ", corrections[index]);
 
-           var label = document.getElementById(q);
             console.log("reponse selectionnee = " + q);
 
             if (q==corrections[index]){
@@ -107,7 +106,7 @@
                 window.location.href = "/fin";
             }
             console.log(index);
-            //return score;
+            return score;
         }
 
         function setCookie(name, value, days) {
