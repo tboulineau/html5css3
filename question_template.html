@@ -52,13 +52,15 @@
         //console.log(reponses);
 
         function affichage(index){
-            /*
+            
             document.getElementById('question').textContent = questions[index];
-            document.getElementById('reponse1').textContent = reponses[index][0];
+            /*document.getElementById('reponse1').textContent = reponses[index][0];
             document.getElementById('reponse2').textContent = reponses[index][1];
             document.getElementById('reponse3').textContent = reponses[index][2];
             document.getElementById('reponse4').textContent = reponses[index][3];
             */
+            let fieldset = document.getElementById("reponses");
+            fieldset.innerHTML = '';
 
             for(let i=0; i<reponses[index].length; i++){
                 let puce = document.createElement("input");
@@ -69,7 +71,7 @@
                 let label = document.createElement("label");
                 label.textContent = reponses[index][i];
 
-                let fieldset = document.getElementById("reponses");
+                
                 fieldset.appendChild(document.createElement('br'));
                 fieldset.appendChild(puce);
                 fieldset.appendChild(label);
@@ -81,9 +83,9 @@
            console.log("vrai réponse : ",corrections[0]);
 
            var label = document.getElementById(q);
-            console.log("reponse selectionnee = " + label.textContent);
+            console.log("reponse selectionnee = " + q);
 
-            if (label.textContent==corrections[0]){
+            if (q==corrections[0]){
                 result.innerHTML=1;
                 score++;
                 console.log("bonne reponse");
