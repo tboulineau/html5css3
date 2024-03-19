@@ -36,7 +36,7 @@
     },
     {
         "question": "Quel animal marin est le plus rapide ?",
-        "options":["poisson d'argent", "saumon", "esturgeon", "espadon"],
+        "options":["poisson d argent", "saumon", "esturgeon", "espadon"],
         "answer":"espadon",
         "difficulte":"intermediaire"
     },
@@ -46,6 +46,9 @@
         "options":["0","1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
         "answer":"3",
         "difficulte":"intermediaire"
+    },
+    {
+        "question":""
     }
 ],
 [
@@ -56,7 +59,7 @@
         "difficulte":"confirme"
     },
     {
-        "question":"Quel est l'intrus ?",
+        "question":"Quel est l intrus ?",
         "options":["homo sapiens", "homo erectus", "homo georgicus", "homo dalecarlus", "homo floresiensis"],
         "answer":"homo dalecarlus",
         "difficulte":"confirme"
@@ -65,6 +68,12 @@
         "question":"A quelle classe appartient la iule ?",
         "options":["myriapoda", "diplopoda", "arthropoda", "chilopoda"],
         "answer":"diplopoda",
+        "difficulte":"confirme"
+    },
+    {
+        "question":"Quelle est la particularité des fourmis légionnaires ?",
+        "options":["Elles crachent du venin", "Elles construisent les plus grosses fourmilières", "Elles sont aveugles", "Leur abdomen est bicolore pour imiter leurs prédateurs"],
+        "answer":"Elles sont aveugles",
         "difficulte":"confirme"
     }
 

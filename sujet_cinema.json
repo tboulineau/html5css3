@@ -44,7 +44,7 @@
     [
         {
             "question":"Quel est le premier film de Charlie Chaplin ?",
-            "options":["Les temps modernes", "Le Dictateur", "La Ruée vers l'or", "Le Kid"],
+            "options":["Les temps modernes", "Le Dictateur", "La Ruée vers l or", "Le Kid"],
             "answer":"Le Kid",
             "difficulte":"confirme"
         },

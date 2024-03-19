@@ -29,7 +29,7 @@
             "difficulte": "intermediaire"
         },
         {
-            "question":"Quelle est la capitale de l'Estonie ?",
+            "question":"Quelle est la capitale de l Estonie ?",
             "options":["Riga", "Helsinki","Tallinn", "Vilnius"],
             "answer":"Tallinn",
             "difficulte":"intermediaire"
@@ -55,7 +55,7 @@
             "difficulte":"confirme"
         },
         {
-            "question":"Comment s'appelle la mer qui baigne la côte ouest de la Thaïlande ?",
+            "question":"Comment s appelle la mer qui baigne la côte ouest de la Thaïlande ?",
             "options":["Mer de Florès", "Mer de Timor", "Mer des Laquedives", "Mer d Andaman"],
             "answer":"Mer d Andaman",
             "difficulte":"confirme"

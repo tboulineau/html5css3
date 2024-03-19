@@ -43,7 +43,7 @@
     ],
     [
         {
-            "question":"Quel modèle d'avions utilise la compagnie Ryanair ?",
+            "question":"Quel modèle d avions utilise la compagnie Ryanair ?",
             "options":["Boeing 737", "Boeing 747", "Boeing 757", "Airbus a320", "Airbus a330", "Airbus a350"],
             "answer":"Boeing 737",
             "difficulte":"confirme"
@@ -55,7 +55,7 @@
             "difficulte":"confirme"
         },
         {
-            "question":"Lequel de ces avions n'a pas de moteur en étoile ?",
+            "question":"Lequel de ces avions n a pas de moteur en étoile ?",
             "options":["Chance Vought F4U Corsair", "Grumman F4F Wildcat", "Republic P-47 Thunderbolt", "North American P-51 Mustang", "Focke-Wulf Fw 190"],
             "answer":"North American P-51 Mustang",
             "difficulte":"confirme"
