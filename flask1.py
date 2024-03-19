@@ -69,12 +69,21 @@ def quiz():
   reponses = []
   corrections = []
 
-  valeurs = random.sample(range(0, len(data["content"])), 3)
+  print(difficulte)
+  match difficulte:
+    case "debutant":
+      indice=0
+    case "intermediaire":
+      indice=1
+    case "confirme":
+      indice=2
+  
+  valeurs = random.sample(range(0, len(data["content"][indice])), 3)
 
   for i in valeurs:
-     questions.append(data["content"][i]["question"])
-     reponses.append(data["content"][i]["options"])
-     corrections.append(data["content"][i]["answer"])
+     questions.append(data["content"][indice][i]["question"])
+     reponses.append(data["content"][indice][i]["options"])
+     corrections.append(data["content"][indice][i]["answer"])
   
   return render_template('question_template.html',
                          questions = json.dumps(questions),

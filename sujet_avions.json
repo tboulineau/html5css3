@@ -1,7 +1,7 @@
 {
     "title":"quizz avions",
     "content" :
-    [
+    [[
         {
             "question": "Qui a fabriqué le premier avion ?",
             "options": ["Les frères Wright", "Clément Ader", "Alberto Santos-Dumont", "Thomas Edison", "Les frères Montgolfier"],
@@ -19,7 +19,9 @@
             "options":["F16", "F18", "BAe Hawk T.1", "Alphajet"],
             "answer":"Alphajet",
             "difficulte":"debutant"
-        },
+        }
+    ],
+    [
         {
             "question":"Quel fut le premier avion opérationnel à réaction de l Histoire ?",
             "options": ["Le Me 262", "Le Bf 109", "Le Bell X-1", "Le Gloster Meteor"],
@@ -37,7 +39,9 @@
             "options":["1","2","3","4"],
             "answer":"3",
             "difficulte":"intermediaire"
-        },
+        }
+    ],
+    [
         {
             "question":"Quel modèle d'avions utilise la compagnie Ryanair ?",
             "options":["Boeing 737", "Boeing 747", "Boeing 757", "Airbus a320", "Airbus a330", "Airbus a350"],
@@ -49,6 +53,12 @@
             "options":["15 tonnes", "20 tonnes", "25 tonnes", "35 tonnes"],
             "answer":"15 tonnes",
             "difficulte":"confirme"
+        },
+        {
+            "question":"Lequel de ces avions n'a pas de moteur en étoile ?",
+            "options":["Chance Vought F4U Corsair", "Grumman F4F Wildcat", "Republic P-47 Thunderbolt", "North American P-51 Mustang", "Focke-Wulf Fw 190"],
+            "answer":"North American P-51 Mustang",
+            "difficulte":"confirme"
         }
-    ] 
+    ]]
 }

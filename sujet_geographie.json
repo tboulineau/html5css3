@@ -1,18 +1,12 @@
 {
     "title":"quizz géographie",
     "content" :
-    [
+    [[
         {
             "question": "Quel est le deuxième pays ayant la plus grande superficie ?",
             "options": ["Russie", "États-Unis", "Chine", "Canada", "Vatican"],
             "answer": "Canada",
             "difficulte": "debutant"
-        },
-        {
-            "question":"Quelle est la capitale du Tadjikistan ?",
-            "options": ["Achgabat", "Douchanbé", "Bichkek", "Tachkent"],
-            "answer": "Douchanbé",
-            "difficulte" : "confirme"
         },
         {
             "question":"Quel est le département français dont le numéro est 27 ?",
@@ -21,16 +15,50 @@
             "difficulte": "debutant"
         },
         {
+            "question":"Le land de Saxe en Allemagne faisait-il partie de la RDA ou de la RFA ?",
+            "options":["RDA","RFA", "aucun"],
+            "answer":"RDA",
+            "difficulte":"debutant"
+        }
+    ],
+    [
+        {
             "question":"Combien y a-t-il d habitants au Nigéria ?",
             "options":["53 millions", "117 millions", "213 millions","335 millions"],
             "answer":"213 millions",
             "difficulte": "intermediaire"
         },
         {
-            "question":"Le land de Saxe en Allemagne faisait-il partie de la RDA ou de la RFA ?",
-            "options":["RDA","RFA", "aucun"],
-            "answer":"RDA",
-            "difficulte":"debutant"
+            "question":"Quelle est la capitale de l'Estonie ?",
+            "options":["Riga", "Helsinki","Tallinn", "Vilnius"],
+            "answer":"Tallinn",
+            "difficulte":"intermediaire"
+        },
+        {
+            "question":"Quel est le point culminant du continent américain ?",
+            "options":["Machu Picchu", "Mont Denali", "Mont Whitney", "Mauna Kena"],
+            "answer":"Mont Denali",
+            "difficulte":"intermediaire"
         }
-    ]   
+    ],
+    [
+        {
+            "question":"Quelle est la capitale du Tadjikistan ?",
+            "options": ["Achgabat", "Douchanbé", "Bichkek", "Tachkent"],
+            "answer": "Douchanbé",
+            "difficulte" : "confirme"
+        },
+        {
+            "question":"Quelle est la superficie du Vatican en km2 ?",
+            "options":["0.4", "1.3", "11.7", "35"],
+            "answer":"0.4",
+            "difficulte":"confirme"
+        },
+        {
+            "question":"Comment s'appelle la mer qui baigne la côte ouest de la Thaïlande ?",
+            "options":["Mer de Florès", "Mer de Timor", "Mer des Laquedives", "Mer d Andaman"],
+            "answer":"Mer d Andaman",
+            "difficulte":"confirme"
+        }
+    ]]
 }
