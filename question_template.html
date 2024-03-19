@@ -56,33 +56,24 @@
             document.getElementById('reponse4').textContent = reponses[index][3];
         }
 
-        
-
-/*
-        var ele = document.getElementsByName('gender');
- 
-            for (i = 0; i < ele.length; i++) {
-                if (ele[i].checked)
-                    document.getElementById("result").innerHTML
-                        = "Gender: " + ele[i].value;
-*/
-
-        function checkAnswers() {
+        function checkAnswers(score) {
            var q= document.querySelector('input[name="reponse"]:checked').value;
-           //var rep=
-           
+           console.log("vrai réponse : ",corrections[0]);
+
            var label = document.getElementById(q);
             console.log("reponse selectionnee = " + label.textContent);
 
-            var i=0, choix=0;
-            if (choix==corrections){
+            if (label.textContent==corrections[0]){
                 result.innerHTML=1;
+                score++;
                 console.log("bonne reponse");
+                console.log("score : ", score);
             }
             else{
                 result.innerHTML=0;
                 console.log("mauvaise reponse");
             }
+            return score;
         }
 
         function process(){
