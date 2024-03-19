@@ -45,8 +45,11 @@
         let questions = JSON.parse('{{questions | safe}}');
         let reponses = JSON.parse('{{reponses | safe}}');
         let corrections = JSON.parse('{{corrections | safe}}');
-        var score = 0;
         affichage(index);
+
+        //setCookie("score", "0", 1);
+        console.log("cookie score : " + getCookie("score"));
+
         //console.log(questions);
         //console.log(reponses);
 
@@ -85,23 +88,51 @@
 
             if (q==corrections[index]){
                 result.innerHTML=1;
-                score++;
-                console.log("bonne reponse");
-                console.log("score : ", score);
+                let score = parseInt(getCookie("score")) + 1;
+                let scoreString = score.toString();
+
+                setCookie("score", scoreString, 1);
+                //console.log("bonne reponse");
             }
             else{
                 result.innerHTML=0;
-                console.log("mauvaise reponse, score : ", score);
+                //console.log("mauvaise reponse");
             }
             if(index + 1 < questions.length){
                 index++;
                 affichage(index);
             }else{
                 console.log("Terminé")
-                window.location.href = "/fin?score=" + score;
+                window.location.href = "/fin";
             }
             console.log(index);
             return score;
+        }
+
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        // Fonction pour récupérer un cookie
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var cookies = document.cookie.split(';');
+            for(var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i];
+                while (cookie.charAt(0) == ' ') {
+                    cookie = cookie.substring(1, cookie.length);
+                }
+                if (cookie.indexOf(nameEQ) == 0) {
+                    return cookie.substring(nameEQ.length, cookie.length);
+                }
+            }
+            return null;
         }
 
        /* function process(){

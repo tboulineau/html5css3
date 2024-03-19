@@ -7,12 +7,29 @@
 </head>
 <body>
     <h1>Vous avez terminé le quizz !</h1>
-    <p>Vous avez obtenu un score de {{score}} points !</p>
+    <p id="affichage">Vous avez obtenu un score de X points !</p>
     <form action="/enregistrer" method="post">
         <label for="nom">Renseignez votre nom pour enregistrer votre score :</label><br>
         <input type="text" id="nom" name="nom"><br><br>
         <input type="submit" value="Envoyer">
     </form>
-    
+    <script>
+        document.getElementById("affichage").textContent = "Vous avez obtenu un score de " + getCookie("score") + " points !";
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var cookies = document.cookie.split(';');
+            for(var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i];
+                while (cookie.charAt(0) == ' ') {
+                    cookie = cookie.substring(1, cookie.length);
+                }
+                if (cookie.indexOf(nameEQ) == 0) {
+                    return cookie.substring(nameEQ.length, cookie.length);
+                }
+            }
+            return null;
+        }
+    </script>
 </body>
 </html>
