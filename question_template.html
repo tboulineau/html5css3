@@ -14,8 +14,9 @@
 
         <form id="quiz-form">
             <h1 id="question">Question</h1><br>
-            <fieldset>
+            <fieldset id="reponses">
                 <legend>Une seule réponse possible :</legend>
+                <!--
                 <div>
                   <input type="radio" name="reponse" value="reponse1" />
                   <label id="reponse1">Réponse 1</label>
@@ -32,6 +33,7 @@
                     <input type="radio" name="reponse" value="reponse4"/>
                     <label id="reponse4">Réponse 4</label>
                   </div>
+                -->
               </fieldset>
             <button type="button" onclick="checkAnswers(score)">Vérifier les réponses</button>
         </form>
@@ -45,15 +47,33 @@
         let corrections = JSON.parse('{{corrections | safe}}');
         var score = 0;
         affichage(index);
+        index++;
         //console.log(questions);
         //console.log(reponses);
 
         function affichage(index){
+            /*
             document.getElementById('question').textContent = questions[index];
             document.getElementById('reponse1').textContent = reponses[index][0];
             document.getElementById('reponse2').textContent = reponses[index][1];
             document.getElementById('reponse3').textContent = reponses[index][2];
             document.getElementById('reponse4').textContent = reponses[index][3];
+            */
+
+            for(let i=0; i<reponses[index].length; i++){
+                let puce = document.createElement("input");
+                puce.type = 'radio';
+                puce.name = 'reponse';
+                puce.value = reponses[index][i];
+
+                let label = document.createElement("label");
+                label.textContent = reponses[index][i];
+
+                let fieldset = document.getElementById("reponses");
+                fieldset.appendChild(document.createElement('br'));
+                fieldset.appendChild(puce);
+                fieldset.appendChild(label);
+            }
         }
         function checkAnswers(score) {
             //score=0;
