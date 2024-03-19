@@ -82,7 +82,6 @@
            var q= document.querySelector('input[name="reponse"]:checked').value;
            console.log("vrai réponse : ",corrections[0]);
 
-           var label = document.getElementById(q);
             console.log("reponse selectionnee = " + q);
 
             if (q==corrections[0]){
@@ -103,7 +102,7 @@
                 window.location.href = "/fin?score=" + score;
             }
             console.log(index);
-            //return score;
+            return score;
         }
 
        /* function process(){
