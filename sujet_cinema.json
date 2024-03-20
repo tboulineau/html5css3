@@ -23,13 +23,13 @@
     ],
     [
         {
-            "question":"Quel film a gagné la palme d or au festival de Cannes 2023 ?",
-            "options": ["La Zone d intérêt", "Anatomie d une chute", "La passion de Dodin Bouffant", "Pauvres Créatures"],
-            "answer": "Anatomie d une chute",
+            "question":"Quel film a gagné la palme d&#39;or au festival de Cannes 2023 ?",
+            "options": ["La Zone d&#39;intérêt", "Anatomie d&#39;une chute", "La passion de Dodin Bouffant", "Pauvres Créatures"],
+            "answer": "Anatomie d&#39;une chute",
             "difficulte": "intermediaire"
         },
         {
-            "question":"Quel acteur détient le record du nombre d oscars du meilleur acteur ?",
+            "question":"Quel acteur détient le record du nombre d&#39;oscars du meilleur acteur ?",
             "options": ["Leonardo DiCaprio", "Robert De Niro", "Tom Hanks", "Daniel Day-Lewis"],
             "answer": "Daniel Day-Lewis",
             "difficulte": "intermediaire"
@@ -44,7 +44,7 @@
     [
         {
             "question":"Quel est le premier film de Charlie Chaplin ?",
-            "options":["Les temps modernes", "Le Dictateur", "La Ruée vers l or", "Le Kid"],
+            "options":["Les temps modernes", "Le Dictateur", "La Ruée vers l&#39;or", "Le Kid"],
             "answer":"Le Kid",
             "difficulte":"confirme"
         },

@@ -23,13 +23,13 @@
     ],
     [
         {
-            "question":"Combien y a-t-il d habitants au Nigéria ?",
+            "question":"Combien y a-t-il d&#39;habitants au Nigéria ?",
             "options":["53 millions", "117 millions", "213 millions","335 millions"],
             "answer":"213 millions",
             "difficulte": "intermediaire"
         },
         {
-            "question":"Quelle est la capitale de l Estonie ?",
+            "question":"Quelle est la capitale de l&#39;Estonie ?",
             "options":["Riga", "Helsinki","Tallinn", "Vilnius"],
             "answer":"Tallinn",
             "difficulte":"intermediaire"
@@ -55,9 +55,9 @@
             "difficulte":"confirme"
         },
         {
-            "question":"Comment s appelle la mer qui baigne la côte ouest de la Thaïlande ?",
-            "options":["Mer de Florès", "Mer de Timor", "Mer des Laquedives", "Mer d Andaman"],
-            "answer":"Mer d Andaman",
+            "question":"Comment s&#39;appelle la mer qui baigne la côte ouest de la Thaïlande ?",
+            "options":["Mer de Florès", "Mer de Timor", "Mer des Laquedives", "Mer d&#39;Andaman"],
+            "answer":"Mer d&#39;Andaman",
             "difficulte":"confirme"
         }
     ]]

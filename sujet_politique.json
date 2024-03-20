@@ -3,7 +3,7 @@
     "content" :
     [[
         {
-            "question":"Combien y a-t-il de députés à l Assemblée Nationale ?",
+            "question":"Combien y a-t-il de députés à l&#39;Assemblée Nationale ?",
             "options":["100", "500", "755","473", "577",  "689"],
             "answer":"577",
             "difficulte": "debutant"
@@ -16,17 +16,17 @@
         },
         {
             "question":"Quel fut le troisième président de la 5e République",
-            "options":["Jacques Chirac", "Valerie Giscard d Estaing", "Georges Pompidou", "Charles de Gaulle"],
-            "answer":"Valerie Giscard d Estaing",
+            "options":["Jacques Chirac", "Valerie Giscard d&#39;Estaing", "Georges Pompidou", "Charles de Gaulle"],
+            "answer":"Valerie Giscard d&#39;Estaing",
             "difficulte":"debutant"
         }
     ],
     [
         {
-            "question":"Quel fut le résultat du référendum de 2005 sur l établissement d une Constitution européenne ?",
+            "question":"Quel fut le résultat du référendum de 2005 sur l&#39;établissement d&#39;une Constitution européenne ?",
             "options": ["Pour", "Contre"],
             "answer": "Contre",
-            "fun-fact": "Sarko l a adopté quand même en 2007",
+            "fun-fact": "Sarko l&#39;a adopté quand même en 2007",
             "difficulte": "intermediaire"
         },
         {
@@ -56,7 +56,7 @@
             "difficulte":"confirme"
         },
         {
-            "question":"Qui a été porte-parole Lutte Ouvrière avant la porte-parole acutelle ?",
+            "question":"Qui a été porte-parole de Lutte Ouvrière avant la porte-parole acutelle ?",
             "options":["Nathalie Arthaud", "Olivier Besancenot", "Arlette Laguiller", "Georges Marchais"],
             "answer":"Arlette Laguiller",
             "difficulte":"confirme"

@@ -23,15 +23,15 @@
     ],
     [
         {
-            "question":"Quel fut le premier avion opérationnel à réaction de l Histoire ?",
+            "question":"Quel fut le premier avion opérationnel à réaction de l&#39;Histoire ?",
             "options": ["Le Me 262", "Le Bf 109", "Le Bell X-1", "Le Gloster Meteor"],
             "answer": "Le Me 262",
             "difficulte":"intermediaire"
         },
         {
-            "question":"Quel est l avion le plus lourd au monde ?",
-            "options": ["L Airbus A380", "Le Boeing 747", "Le Lockheed C-5 Galaxy", "L Antonov An-225"],
-            "answer": "L Antonov An-225",
+            "question":"Quel est l&#39;avion le plus lourd au monde ?",
+            "options": ["L&#39;Airbus A380", "Le Boeing 747", "Le Lockheed C-5 Galaxy", "L&#39;ntonov An-225"],
+            "answer": "L&#39;Antonov An-225",
             "difficulte":"intermediaire"
         },
         {
@@ -43,19 +43,19 @@
     ],
     [
         {
-            "question":"Quel modèle d avions utilise la compagnie Ryanair ?",
+            "question":"Quel modèle d&#39;avion utilise la compagnie Ryanair ?",
             "options":["Boeing 737", "Boeing 747", "Boeing 757", "Airbus a320", "Airbus a330", "Airbus a350"],
             "answer":"Boeing 737",
             "difficulte":"confirme"
         },
         {
-            "question":"Quelle est la poussée maximum d un Dassault Rafale ?",
+            "question":"Quelle est la poussée maximum d&#39;un Dassault Rafale ?",
             "options":["15 tonnes", "20 tonnes", "25 tonnes", "35 tonnes"],
             "answer":"15 tonnes",
             "difficulte":"confirme"
         },
         {
-            "question":"Lequel de ces avions n a pas de moteur en étoile ?",
+            "question":"Lequel de ces avions n&#39;a pas de moteur en étoile ?",
             "options":["Chance Vought F4U Corsair", "Grumman F4F Wildcat", "Republic P-47 Thunderbolt", "North American P-51 Mustang", "Focke-Wulf Fw 190"],
             "answer":"North American P-51 Mustang",
             "difficulte":"confirme"
