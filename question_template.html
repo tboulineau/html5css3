@@ -16,24 +16,6 @@
             <h1 id="question">Question</h1><br>
             <fieldset id="reponses">
                 <legend>Une seule réponse possible :</legend>
-                <!--
-                <div>
-                  <input type="radio" name="reponse" value="reponse1" />
-                  <label id="reponse1">Réponse 1</label>
-                </div>
-                <div>
-                    <input type="radio" name="reponse" value="reponse2"/>
-                    <label id="reponse2">Réponse 2</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="reponse" value="reponse3"/>
-                    <label id="reponse3">Réponse 3</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="reponse" value="reponse4"/>
-                    <label id="reponse4">Réponse 4</label>
-                  </div>
-                -->
               </fieldset>
             <button type="button" onclick="checkAnswers()">Vérifier les réponses</button>
         </form>
@@ -46,21 +28,17 @@
         let reponses = JSON.parse('{{reponses | safe}}');
         let corrections = JSON.parse('{{corrections | safe}}');
         affichage(index);
+        setCookie("score", "", 1);
 
-        //setCookie("score", "0", 1);
+        // Pour accéder aux corrections à la fin du questionnaire
+        localStorage.clear;
+        localStorage.setItem('correction', '');
+
         console.log("cookie score : " + getCookie("score"));
-
-        //console.log(questions);
-        //console.log(reponses);
 
         function affichage(index){
             
             document.getElementById('question').textContent = questions[index];
-            /*document.getElementById('reponse1').textContent = reponses[index][0];
-            document.getElementById('reponse2').textContent = reponses[index][1];
-            document.getElementById('reponse3').textContent = reponses[index][2];
-            document.getElementById('reponse4').textContent = reponses[index][3];
-            */
             let fieldset = document.getElementById("reponses");
             fieldset.innerHTML = '';
 
@@ -79,23 +57,33 @@
                 fieldset.appendChild(label);
             }
         }
+
         function checkAnswers() {
-            //score=0;
-           var q = document.querySelector('input[name="reponse"]:checked').value;
-           console.log("vrai réponse : ", corrections[index]);
+            var q = document.querySelector('input[name="reponse"]:checked').value;
+            console.log("vrai réponse : ", corrections[index]);
 
             console.log("reponse selectionnee = " + q);
 
+            // Bonne réponse
             if (q==corrections[index]){
                 result.innerHTML=1;
-                let score = parseInt(getCookie("score")) + 1;
-                let scoreString = score.toString();
+                let score = getCookie("score") + "1";
+                //let scoreString = score.toString();
 
-                setCookie("score", scoreString, 1);
+                setCookie("score", score, 1);
                 //console.log("bonne reponse");
             }
+            // Mauvaise réponse
             else{
                 result.innerHTML=0;
+                let score = getCookie("score") + "0";
+                //let scoreString = score.toString();
+
+                setCookie("score", score, 1);
+
+                // Inscrire la correction
+                let correctionBuffer = questions[index] + "<br>Réponse sélectionnée : " + q + "<br>Bonne réponse : " + corrections[index] + "<br>";
+                localStorage.setItem('correction', localStorage.getItem('correction') + correctionBuffer);
                 //console.log("mauvaise reponse");
             }
             if(index + 1 < questions.length){
@@ -119,7 +107,6 @@
             document.cookie = name + "=" + (value || "") + expires + "; path=/";
         }
 
-        // Fonction pour récupérer un cookie
         function getCookie(name) {
             var nameEQ = name + "=";
             var cookies = document.cookie.split(';');
@@ -134,17 +121,6 @@
             }
             return null;
         }
-
-       /* function process(){
-            if(index < questions.length){
-                affichage(index);
-                index++;
-            }else{
-                console.log("Terminé")
-                window.location.href = "/fin?score=" + score;
-            }
-            console.log(index);
-        }*/
     </script>
 </body>
 </html>

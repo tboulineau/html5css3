@@ -10,7 +10,7 @@
         },
         {
             "question":"Qui est le maire de Béziers ?",
-            "options":["Robert Ménard","Louis Aliot", "Christian Estrosi", "Nicolas Dupont-Aingan"],
+            "options":["Robert Ménard","Louis Aliot", "Christian Estrosi", "Nicolas Dupont-Aignan"],
             "answer":"Robert Ménard",
             "difficulte": "debutant"
         },

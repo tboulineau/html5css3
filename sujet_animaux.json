@@ -36,7 +36,7 @@
     },
     {
         "question": "Quel animal marin est le plus rapide ?",
-        "options":["poisson d argent", "saumon", "esturgeon", "espadon"],
+        "options":["poisson d&#39argent", "saumon", "esturgeon", "espadon"],
         "answer":"espadon",
         "difficulte":"intermediaire"
     },
@@ -48,7 +48,10 @@
         "difficulte":"intermediaire"
     },
     {
-        "question":""
+        "question":"Combien d&#39;os un nourrisson possède-t-il à la naissance ?",
+        "options":["350","600","601","1024"],
+        "answer":"350",
+        "difficulte":"intermediaire"
     }
 ],
 [
