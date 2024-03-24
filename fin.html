@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Vous avez terminé le quizz !</h1>
-    <p id="affichage">Vous avez obtenu un score de X points !</p>
+    <p id="affichage">Vous avez obtenu un score de X points en Y secondes !</p>
     <form action="/enregistrer" method="post">
         <label for="nom">Renseignez votre nom pour enregistrer votre score :</label><br>
         <input type="text" id="nom" name="nom"><br><br>
@@ -16,9 +16,10 @@
     <div id="emplacementCorrection"></div>
     <script>
         let points = getCookie('score');
-        points=parseInt(points);
-        console.log("type de points : ",typeof(points));
-        points=points-1;
+        let chrono = getCookie("temps")/1000;
+        //points=parseInt(points);
+        //console.log("type de points : ",typeof(points));
+        //points=points-1;
         //let p1=points-100;
         //(points-=p1)/10;
         //let p2=points-10;
@@ -28,7 +29,7 @@
         //points=3;
         console.log("points : "+ points.toString());
         console.log("type de points : " + typeof(points));
-        document.getElementById("affichage").textContent = "Vous avez obtenu un score de " + points + " points !";
+        document.getElementById("affichage").textContent = "Vous avez obtenu un score de " + points + " points en " + chrono + " secondes !";
 
          // = localStorage.getItem('correction');
         let paragraphe = document.createElement("p");

@@ -3,9 +3,9 @@
 "content":
 [[
     {
-        "question": "Quel est le plus grand animal terrestre ?",
+        "question": "Quel est le plus grand animal terrestre en hauteur ?",
         "options": ["Éléphant", "Girafe", "Rhinocéros", "Hippopotame"],
-        "answer": "Éléphant",
+        "answer": "Girafe",
         "difficulte":"debutant"
     },
     {

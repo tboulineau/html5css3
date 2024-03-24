@@ -28,7 +28,10 @@
         let reponses = JSON.parse('{{reponses | safe}}');
         let corrections = JSON.parse('{{corrections | safe}}');
         affichage(index);
-        setCookie("score", "", 1);
+        setCookie("score", "0", 1);
+
+        setCookie("temps", "", 1);
+        let chrono = Date.now();
 
         // Pour accéder aux corrections à la fin du questionnaire
         localStorage.clear;
@@ -51,7 +54,6 @@
                 let label = document.createElement("label");
                 label.innerHTML = reponses[index][i];
 
-                
                 fieldset.appendChild(document.createElement('br'));
                 fieldset.appendChild(puce);
                 fieldset.appendChild(label);
@@ -61,39 +63,41 @@
         function checkAnswers() {
             var q = document.querySelector('input[name="reponse"]:checked').value;
             console.log("vrai réponse : ", corrections[index]);
-
             console.log("reponse selectionnee = " + q);
 
             // Bonne réponse
-            if (q==corrections[index]){
-                result.innerHTML=1;
+            if (q == corrections[index]){
+                //result.innerHTML=1;
                 let score = parseInt(getCookie("score")) + 1;
+                //console.log("score to string : " + score);
                 let scoreString = score.toString();
+                console.log("scoreString : " + scoreString);
 
                 setCookie("score", scoreString, 1);
-                //console.log("bonne reponse");
+                console.log("bonne reponse");
             }
             // Mauvaise réponse
             else{
-                result.innerHTML=0;
-                let score = parseInt(getCookie("score"));
-                //let scoreString = score.toString();
-
-                //setCookie("score", score, 1);
+                //result.innerHTML=0;
 
                 // Inscrire la correction
                 let correctionBuffer = questions[index] + "<br>Réponse sélectionnée : " + q + "<br>Bonne réponse : " + corrections[index] + "<br>";
                 localStorage.setItem('correction', localStorage.getItem('correction') + correctionBuffer);
-                //console.log("mauvaise reponse");
+                console.log("mauvaise reponse");
             }
+
+            console.log(index);
+            console.log("Score : " + getCookie("score"));
+            
             if(index + 1 < questions.length){
                 index++;
                 affichage(index);
-            }else{
+            }else{ // quizz terminé
+                setCookie("temps", (Date.now() - chrono).toString(), 1); 
                 console.log("Terminé")
                 window.location.href = "/fin";
             }
-            console.log(index);
+            
             //return score;
         }
 
